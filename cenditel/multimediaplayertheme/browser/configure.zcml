@@ -1,0 +1,72 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    i18n_domain="cenditel.multimediaplayertheme">
+
+  <!-- 'MultimediaPlayerTheme' Zope 3 browser layer
+    Register views, viewlets and resources for this layer to make sure
+    they only apply to the 'MultimediaPlayerTheme' theme.
+    You can also use this layer to override default Plone browser views
+    and viewlets only within the 'MultimediaPlayerTheme' theme.
+  -->
+  <interface
+      interface=".interfaces.IThemeSpecific"
+      type="zope.publisher.interfaces.browser.IBrowserSkinType"
+      name="MultimediaPlayerTheme"
+      />
+  
+  <!-- Viewlets registration -->
+  <!-- EXAMPLE (UNCOMMENT TO MAKE AVAILABLE):
+  <browser:viewlet
+      name="cenditel.someviewlet"
+      manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
+      class=".viewlets.MyViewlet"
+      layer=".interfaces.IThemeSpecific"
+      permission="zope2.View"
+      />
+  -->
+
+  <!-- Zope 3 browser resources -->
+
+  <!-- Resource directory for images
+    See cenditel/multimediaplayertheme/browser/images/README.txt
+    for more information about registering images as Zope 3 browser
+    resources.
+  -->
+  <browser:resourceDirectory
+      name="cenditel.multimediaplayertheme.images"
+      directory="images"
+      layer=".interfaces.IThemeSpecific"
+      />
+
+  <!-- Resource directory for stylesheets
+    See cenditel/multimediaplayertheme/browser/stylesheets/README.txt
+    for more information about registering stylesheets as Zope 3 browser
+    resources.
+  -->
+  <browser:resourceDirectory
+      name="cenditel.multimediaplayertheme.stylesheets"
+      directory="stylesheets"
+      layer=".interfaces.IThemeSpecific"
+      />
+
+  <!-- Resource directory for scripts
+    See cenditel/multimediaplayertheme/browser/scripts/README.txt
+    for more information about registering stylesheets as Zope 3 browser
+    resources.
+  -->
+
+  <browser:resourceDirectory
+      name="cenditel.multimediaplayertheme.javascripts"
+      directory="javascripts"
+      layer=".interfaces.IThemeSpecific"
+      />
+
+  <browser:resourceDirectory
+      name="cenditel.multimediaplayertheme.backplayer"
+      directory="backplayer"
+      layer=".interfaces.IThemeSpecific"
+      />
+
+</configure>

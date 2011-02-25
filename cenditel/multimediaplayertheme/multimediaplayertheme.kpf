@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Komodo Project File - DO NOT EDIT -->
+<project id="9a3c77da-f3ab-465d-83ab-415039a0e7e2" kpf_version="4" name="multimediaplayertheme.kpf">
+<preference-set idref="9a3c77da-f3ab-465d-83ab-415039a0e7e2">
+  <boolean id="import_live">1</boolean>
+</preference-set>
+</project>

@@ -1,0 +1,25 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    i18n_domain="cenditel.multimediaplayertheme">
+
+  <genericsetup:registerProfile
+      name="default"
+      title="MultimediaPlayerTheme"
+      directory="profiles/default"
+      description='Extension profile for the "MultimediaPlayerTheme" Plone theme.'
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      i18n:attributes="title gs_profiles_default_title;
+                       description gs_profiles_default_description;"
+      />
+
+  <genericsetup:importStep
+      name="cenditel.multimediaplayertheme.various"
+      title="MultimediaPlayerTheme: miscellaneous import steps"
+      description="Various import steps that are not handled by GS import/export handlers."
+      handler="cenditel.multimediaplayertheme.setuphandlers.setupVarious">
+    <depends name="skins"/>
+  </genericsetup:importStep>
+
+</configure>

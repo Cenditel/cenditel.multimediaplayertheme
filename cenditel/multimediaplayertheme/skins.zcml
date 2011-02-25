@@ -1,0 +1,16 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:cmf="http://namespaces.zope.org/cmf"
+    i18n_domain="cenditel.multimediaplayertheme">
+
+  <!-- File System Directory Views registration -->
+  <cmf:registerDirectory name="cenditel_multimediaplayertheme_custom_images"/>
+  <cmf:registerDirectory name="cenditel_multimediaplayertheme_custom_templates"/>
+  <cmf:registerDirectory name="cenditel_multimediaplayertheme_styles"/>
+
+  <!-- Note: This could also be done for all folders at once
+       by replacing the previous lines with this one:
+  <cmf:registerDirectory name="skins" directory="skins" recursive="True" />
+  -->
+
+</configure>
