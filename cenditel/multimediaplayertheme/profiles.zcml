@@ -6,7 +6,7 @@
 
   <genericsetup:registerProfile
       name="default"
-      title="MultimediaPlayerTheme"
+      title="Cenditel Foundation Multimedia Player Theme"
       directory="profiles/default"
       description='Extension profile for the "MultimediaPlayerTheme" Plone theme.'
       provides="Products.GenericSetup.interfaces.EXTENSION"
