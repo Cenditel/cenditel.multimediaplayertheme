@@ -23,7 +23,7 @@ setup(name='cenditel.multimediaplayertheme',
         'Topic :: Software Development :: Libraries :: Python Modules',
         'License :: OSI Approved :: GNU General Public License (GPL)',
         ],
-      keywords='plone, product, content type, audio, video, html5',
+      keywords='cenditel plone product content type audio video html5',
       author='Victor Terán',
       author_email='elalcon89@gmail.com',
       maintainer='Leonardo J. Caballero G.',
@@ -36,9 +36,9 @@ setup(name='cenditel.multimediaplayertheme',
       zip_safe=False,
       install_requires=[
           'setuptools',
+          # -*- Extra requirements: -*-
           'cenditel.audio',
           'cenditel.video',
-          # -*- Extra requirements: -*-
       ],
       entry_points="""
       # -*- Entry points: -*-
